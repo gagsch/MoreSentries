@@ -1,0 +1,15 @@
+Hello everyone. This mod was previously removed, but is now back on the workshop.
+I have no plans on updating this mod, and I'm making it open source.
+Feel free to take anything from this mod and use it in your own.
+
+This mod aims to feel as "Re-Logic" as possible and fully flesh out the sentry subclass.
+The goal is to close or seriously remedy every gap in progression.
+
+Additions:
+- 17 sentries*
+- 3 armor sets
+- 3 new helmets for existing armor sets
+- 4 accessories
+- 1 potion
+- and many sentry-related mechanics
+*the crimson rod and nimbus rod have been turned into sentries

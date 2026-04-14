@@ -1,0 +1,6 @@
+displayName = Sentries Galore
+author = blubby
+version = 1.6
+hideCode = false
+hideResources = false
+includeSource = true

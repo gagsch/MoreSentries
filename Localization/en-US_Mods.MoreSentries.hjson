@@ -1,0 +1,379 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	ImpSentryItem: {
+		DisplayName: Hellion Staff
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons an imp sentry
+			'''
+	}
+
+	DartSentryItem: {
+		DisplayName: Trap Staff
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a dart trap that shoots poisons darts horizontally
+			'''
+	}
+
+	FlinxEarmuffs: {
+		SetBonus: Increases summon damage by 5%
+		DisplayName: Flinx Fur Earmuffs
+		Tooltip: Increase your max number of sentries by 1
+	}
+
+	BoCSentryItem: {
+		DisplayName: Brain Cane
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a brain that releases up to 3 orbiting eyes
+			'''
+	}
+
+	EoWSentryItem: {
+		DisplayName: Vile Mortar Staff
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a mortar that catapults vile spit at your enemies
+			'''
+	}
+
+	SentryPotion: {
+		DisplayName: Sentry Potion
+		Tooltip: Minor improvements to sentry stats
+	}
+
+	MinigunSentryItem: {
+		DisplayName: Construction PDA
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a sentry gun to blast your enemies
+			Can be upgraded later
+			'There's a spy creeping around here.'
+			'''
+	}
+
+	EngineerShirt: {
+		SetBonus: Increases your max number of sentries
+		DisplayName: Engineering Shirt
+		Tooltip:
+			'''
+			Increases sentry fire rate by 15%
+			35% faster sentry use speed
+			'''
+	}
+
+	EngineerPants: {
+		DisplayName: Engineering Pants
+		Tooltip: Increases sentry damage by 20%
+	}
+
+	TheBlueprint: {
+		DisplayName: The Blueprint
+		Tooltip: Increases your max number of sentries by 1
+	}
+
+	StardustSentryItem: {
+		DisplayName: Stardust Twinkle Staff
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a stardust twinkle popper that spits out bursting spiders to attack your foes
+			'''
+	}
+
+	GolemSentryItem: {
+		DisplayName: Staff of the Ancient Guardian
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a Mini-Golem that grows stronger each time you use this item
+			<right> to remove
+			'''
+	}
+
+	CorruptionCloudItem: {
+		DisplayName: Corrupt Rod
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a cloud to rain acid on your foes
+			'''
+	}
+
+	HiveSentryItem: {
+		DisplayName: Nest Staff
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a bee hive to release swarms of bees on your enemies
+			'''
+	}
+
+	TeslaSentryItem: {
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a tesla turret to electrify your foes
+			'''
+		DisplayName: Tesla Control Rod
+	}
+
+	ObsidianHardhat: {
+		DisplayName: Obsidian Hardhat
+		Tooltip: Increases your max number of sentries by 1
+		SetBonus:
+			'''
+			Increases whip range by 30% and speed by 15%
+			Increases summoning damage by 15%
+			'''
+	}
+
+	VenusSentryItem: {
+		DisplayName: Venus Fly Staff
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a life-stealing venus fly trap that latches onto your enemies
+			'''
+	}
+
+	DefenderEmblem: {
+		DisplayName: Defender Emblem
+		Tooltip:
+			'''
+			Increases your max number of sentries by 1
+			Increases sentry damage, fire rate and use speed by 12%
+			'''
+	}
+
+	BessBeetle: {
+		DisplayName: Bess Beetle
+		Tooltip:
+			'''
+			Increases your max number of sentries by 1
+			Increases sentry damage and knockback by 25%
+			'''
+	}
+
+	ShadowflameMask: {
+		DisplayName: Shadowflame Mask
+		Tooltip:
+			'''
+			Increases your max number of sentries by 1
+			Increases sentry damage by 7%
+			'''
+	}
+
+	ShadowflameRobe: {
+		SetBonus: Sentries inflict the Shadowflame debuff
+		DisplayName: Shadowflame Tunic
+		Tooltip:
+			'''
+			Increases your max number of sentries by 1
+			Increases sentry damage by 7%
+			'''
+	}
+
+	ShadowflameBoots: {
+		DisplayName: Shadowflame Kilt
+		Tooltip:
+			'''
+			Increases sentry damage by 7%
+			25% increased acceleration and movement speed
+			'''
+	}
+
+	MahiMask: {
+		DisplayName: Mahi Helmet
+		Tooltip:
+			'''
+			Increases your max number of sentries by 1
+			Increases sentry damage by 10%
+			'''
+	}
+
+	MahiShirt: {
+		SetBonus: Every sentry hit increases sentry armor penetration slightly, up to 15, slowly decreasing over time
+		DisplayName: Mahi Breastplate
+		Tooltip:
+			'''
+			Increases your max number of sentries by 1
+			10% increased sentry damage and fire rate
+			'''
+	}
+
+	MahiPants: {
+		DisplayName: Mahi Leggings
+		Tooltip:
+			'''
+			Increases your max number of sentries by 1
+			Greatly increased acceleration
+			'''
+	}
+
+	CactusSentryItem: {
+		DisplayName: Cactus Rod
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a cactus to shoot needles at your enemies
+			'The zombies are coming...'
+			'''
+	}
+
+	BubbleSentryItem: {
+		DisplayName: Bubble Mare Staff
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a seahorse that shoots homing bubbles
+			'''
+	}
+
+	LaserSentryItem: {
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons Skeletron Prime's Laser to pulse down your enemies
+			'''
+		DisplayName: Prime Conduit Staff
+	}
+
+	BigRedButton: {
+		Tooltip:
+			'''
+			Explodes and destroys all sentries
+			<right> to explode the sentry closest to your cursor
+			'''
+		DisplayName: Remote Detonator
+	}
+
+	BloodyToolbox: {
+		DisplayName: Bloody Toolbox
+		Tooltip:
+			'''
+			Increases sentry fire rate by 8%
+			20% faster sentry use speed
+			'''
+	}
+
+	TavernkeepRadar: {
+		DisplayName: Etherian Tracker
+		Tooltip: Leads to the unconscious Tavernkeep
+	}
+
+	PDAUpgradeChip: {
+		Tooltip: Can be used to upgrade the Construction PDA
+		DisplayName: PDA Upgrade Chip
+	}
+
+	PDAExpansionModule: {
+		Tooltip: Can be used to expand and upgrade the Construction PDA
+		DisplayName: PDA Expansion Module
+	}
+
+	SporeSentryItem: {
+		DisplayName: Chlorophyte Spore Cane
+		Tooltip:
+			'''
+			Summons a sentry
+			Summons a mushroom that releases spores at nearby enemies
+			'''
+	}
+
+	HallowedCasque: {
+		Tooltip:
+			'''
+			Increases your max number of sentries by 1
+			Increases sentry damage by 10%
+			'''
+		DisplayName: Hallowed Casque
+	}
+
+	AncientHallowedCasque: {
+		Tooltip:
+			'''
+			Increases your max number of sentries by 1
+			Increases sentry damage by 10%
+			'''
+		DisplayName: Ancient Hallowed Casque
+	}
+}
+
+Projectiles: {
+	ImpSentry.DisplayName: Hellion
+	DartSentry.DisplayName: Dart Trap
+	VenomDart.DisplayName: Venom Dart
+	BoCSentry.DisplayName: Mother Brain
+	FriendlyCreeper.DisplayName: Creeper
+	EoWSentry.DisplayName: Vile Mortar
+	VileSpit.DisplayName: Vile Spit
+	PoisonDart.DisplayName: Poison Dart
+	StardustSentry.DisplayName: Stardust Twinkle Popper
+	StardustSpider.DisplayName: Twinkle Spider
+	Twinkle.DisplayName: Twinkle
+	GolemSentry.DisplayName: Mini-Golem
+	HiddenGolemSentry.DisplayName: Mini-Golem
+	CorruptionCloudMoving.DisplayName: Corrupt Cloud
+	CorruptionCloudRaining.DisplayName: Corrupt Cloud
+	AcidRain.DisplayName: Acid Rain
+	HiveSentry.DisplayName: Hive
+	GolemSentryFist.DisplayName: Golem Fist
+	TeslaSentry.DisplayName: Tesla Turret
+	Electric.DisplayName: Electricity
+	VenusSentry.DisplayName: Venus Fly
+	CactusSentry.DisplayName: Living Cacti
+	CactusNeedle.DisplayName: Cactus Needle
+	BubbleSentry.DisplayName: Dirty Bubble
+	Bubble.DisplayName: Bubble
+	DirtyBubble.DisplayName: Dirty Bubble's Baby
+	LaserSentry.DisplayName: Detached Prime Laser
+	PrimeLaser.DisplayName: Death Laser
+	SentryLevel1.DisplayName: Turret Mk. I
+	SentryLevel2.DisplayName: Turret Mk. II
+	SentryLevel3.DisplayName: Turret Mk. III
+	FriendlyRocket.DisplayName: Rocket
+	SporeSentry.DisplayName: Sporeshroom
+	Spore.DisplayName: Spore
+}
+
+Buffs: {
+	Sentried: {
+		DisplayName: Technician
+		Description: Minor improvements to sentry stats
+	}
+}
+
+Configs: {
+	MoreSentriesConfig: {
+		DisplayName: More Sentries Config
+
+		UseSentryDamageType: {
+			Label: Use Sentry Damage Type
+			Tooltip:
+				'''
+				If enabled, sentries will use there own damage type
+				[c/FF0000:Disabling this option will cause balance issues and is only intended for compatibility.]
+				'''
+		}
+	}
+
+	MoreSentriesClientConfig: {
+		DisplayName: More Sentries Client Config
+
+		HideSentryTooltipLine: {
+			Label: Hide Sentry Tooltip Line
+			Tooltip: If enabled, the "Summons a sentry" line in tooltips will be hidden.
+		}
+	}
+}
+
+Keybinds.ExplodeSentries.DisplayName: Explode Sentries
+DamageClasses.SentryDamageClass.DisplayName: sentry damage
