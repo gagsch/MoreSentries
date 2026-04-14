@@ -7,15 +7,6 @@ namespace MoreSentries
 {
 	public class MoreSentries : Mod
 	{
-        public override void Load()
-        {
-            ModLoader.TryGetMod("Wikithis", out Mod wikithis);
-			if (wikithis != null && !Main.dedServ)
-			{
-				wikithis.Call("AddModURL", this, "https://wiki.lovsch.com/sg/{}");
-			}
-        }
-
 		public static bool targetCheck(Projectile projectile, NPC npc, ref float maxDistance, bool ignoreLineOfSight = false)
 		{
 			if (npc.CanBeChasedBy(projectile)) {
