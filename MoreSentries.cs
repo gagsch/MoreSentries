@@ -7,7 +7,7 @@ namespace MoreSentries
 {
 	public class MoreSentries : Mod
 	{
-		public static bool targetCheck(Projectile projectile, NPC npc, ref float maxDistance, bool ignoreLineOfSight = false)
+		public static bool TargetCheck(Projectile projectile, NPC npc, ref float maxDistance, bool ignoreLineOfSight = false)
 		{
 			if (npc.CanBeChasedBy(projectile)) {
 				float distanceToTargetNPC = Vector2.Distance(projectile.Center, npc.Center);
@@ -21,14 +21,14 @@ namespace MoreSentries
 
 		public static NPC NearestTarget(Projectile projectile, float maxDistance, bool ignoreLineOfSight = false, bool checkMinionAttackTarget = true)
 		{
-			if (checkMinionAttackTarget && projectile.OwnerMinionAttackTargetNPC != null && targetCheck(projectile, projectile.OwnerMinionAttackTargetNPC, ref maxDistance, ignoreLineOfSight)) {
+			if (checkMinionAttackTarget && projectile.OwnerMinionAttackTargetNPC != null && TargetCheck(projectile, projectile.OwnerMinionAttackTargetNPC, ref maxDistance, ignoreLineOfSight)) {
 				return projectile.OwnerMinionAttackTargetNPC;
 			}
 
 			NPC targetNPC = null;
 			foreach (var npc in Main.ActiveNPCs)
 			{
-				if (targetCheck(projectile, npc, ref maxDistance, ignoreLineOfSight)) targetNPC = npc;
+				if (TargetCheck(projectile, npc, ref maxDistance, ignoreLineOfSight)) targetNPC = npc;
 			}
 
 			return targetNPC;

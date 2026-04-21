@@ -3,7 +3,6 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Terraria.ID;
 using Microsoft.Xna.Framework.Graphics;
-using Terraria.GameContent;
 using ReLogic.Content;
 
 namespace MoreSentries.Common;
@@ -29,11 +28,17 @@ public class TavernkeepSystem : ModSystem
         TavernkeepTilePos = GetSafePosition();
     }
 
-    public override void PreUpdateWorld() {
-        if (!IsTileVisibleToAnyPlayer(TavernkeepTilePos.X, TavernkeepTilePos.Y) && (Condition.DownedEaterOfWorlds.IsMet() || Condition.DownedBrainOfCthulhu.IsMet()) && !NPC.AnyNPCs(NPCID.BartenderUnconscious) && !NPC.AnyNPCs(NPCID.DD2Bartender))
+    public override void PostUpdateWorld() {
+        if (!NPC.downedBoss2) return;
+        if (IsTileVisibleToAnyPlayer(TavernkeepTilePos.X, TavernkeepTilePos.Y)) return;
+
+        foreach (var npc in Main.ActiveNPCs)
         {
-            NPC.NewNPC(null, TavernkeepTilePos.X * 16, TavernkeepTilePos.Y * 16, NPCID.BartenderUnconscious);
+            if (npc.type == NPCID.DD2Bartender || npc.type == NPCID.BartenderUnconscious)
+                return;
         }
+
+        NPC.NewNPC(null, TavernkeepTilePos.X * 16, TavernkeepTilePos.Y * 16, NPCID.BartenderUnconscious);
     }
 
     public override void PostDrawTiles()
@@ -104,22 +109,21 @@ public class TavernkeepSystem : ModSystem
 
     public static Point GetSafePosition()
     {
-        int x = Main.rand.Next(0, Main.maxTilesX);
-        int y = 0;
+        int minX = (int)(Main.maxTilesX * 0.1f);
+        int maxX = (int)(Main.maxTilesX * 0.9f);
 
-        while (!Main.tile[x, y].HasTile || !Main.tileSolid[Main.tile[x, y].TileType])
+        while (true)
         {
-            y++;
-            if (y > Main.maxTilesY)
-            {
-                x = Main.rand.Next(0, Main.maxTilesX);
-                y = 0;
-                continue;
-            }
+            int x = Main.rand.Next(minX, maxX);
+            int y = 0;
+
+            while (y <= Main.maxTilesY && (!Main.tile[x, y].HasTile || !Main.tileSolid[Main.tile[x, y].TileType]))
+                y++;
+
+            if (y > Main.maxTilesY) continue;
+            if (y < Main.worldSurface * 0.6f) continue;
+
+            return new Point(x, y - 2);
         }
-
-        if (y < Main.worldSurface * 0.6f) return GetSafePosition();
-
-        return new Point(x, y - 2);
     }
 }
